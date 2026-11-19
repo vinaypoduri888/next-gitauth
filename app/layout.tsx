@@ -27,7 +27,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <nav>This is the Navbar — from layout.tsx</nav>
+        {children}
+        <footer>This is the Footer — from layout.tsx</footer>
+      </body>
     </html>
   );
 }
